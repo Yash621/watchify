@@ -1,0 +1,33 @@
+.nav_contents {
+  display: flex;
+  justify-content: space-between;
+  height: 240px;
+  width: 100%;
+  padding: 70px;
+}
+.nav_logo {
+  position: fixed;
+  left: 0;
+  width: 550px;
+  cursor: pointer;
+  padding-left: 100px;
+  margin-top: -30px;
+  /* background-color: blue; */
+}
+.nav_avatar {
+  position: fixed;
+  right: 20px;
+  width: 220px;
+  cursor: pointer;
+}
+.nav_black {
+  background-color: #111;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 320px;
+  background-color: blue;
+}

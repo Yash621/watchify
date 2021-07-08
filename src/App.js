@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import HomeScreen from "./pages/HomeScreen";
+import "./app.css";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <HomeScreen />
+    </div>
+  );
 }
 
 export default App;
