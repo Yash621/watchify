@@ -2,9 +2,9 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  height: 150px;
+  height: 1px;
   width: 100%;
-  padding: 70px;
+  padding: 35px;
   z-index: 1;
   transition: all 0.5s;
   transition-timing-function: ease-in;
@@ -14,18 +14,19 @@
   top: 30px;
   position: fixed;
   left: 0;
-  width: 500px;
+  width: 118px;
   cursor: pointer;
-  padding-left: 100px;
+  padding-left: 46px;
   margin-top: -30px;
   /* background-color: blue; */
 }
 .nav_avatar {
   position: fixed;
+  top: 18px;
   right: 20px;
-  width: 150px;
+  width: 35px;
   cursor: pointer;
-  padding-right: 50px;
+  padding-right: 60px;
 }
 .nav_black {
   background-color: #111;
@@ -35,6 +36,6 @@
   top: 0;
   padding: 20px;
   width: 100%;
-  height: 320px;
+  height: 300px;
   background-color: blue;
 }
