@@ -20,7 +20,7 @@ function NavBar() {
     <div className={`nav_contents ${show && "nav_black"}`}>
       <img
         className="nav_logo"
-        src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+        src="https://www.seekpng.com/png/full/0-7077_batman-wonder-woman-logo.png"
         alt="helu friend"
       />
       <img
