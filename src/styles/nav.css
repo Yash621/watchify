@@ -1,4 +1,5 @@
 .nav_contents {
+  background-image: linear-gradient(to bottom, transparent 0%, black 280%);
   top: 0;
   display: flex;
   justify-content: space-between;

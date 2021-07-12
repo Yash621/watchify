@@ -33,14 +33,9 @@
 .banner--fadebottom {
   z-index: 0.8;
   position: relative;
-  bottom: 500px;
-  height: 7.4rem;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(40, 40, 40, 0.61),
-    #111
-  );
+  bottom: 370px;
+  height: 5.4rem;
+  background-image: linear-gradient(to top, #f3f4f6, transparent);
 }
 .banner_button {
   height: 40px;
