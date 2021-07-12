@@ -7,13 +7,6 @@ function HomeScreen() {
     <div className="homeScreen">
       <Nav />
       <Banner />
-      <h1>klfsjklfsjlksfj</h1>
-      <h1>klfsjklfsjlksfj</h1>
-      <h1>klfsjklfsjlksfj</h1>\<h1>klfsjklfsjlksfj</h1>
-      <h1>klfsjklfsjlksfj</h1>
-      <h1>klfsjklfsjlksfj</h1>
-      <h1>klfsjklfsjlksfj</h1>
-      <h1>klfsjklfsjlksfj</h1>
     </div>
   );
 }

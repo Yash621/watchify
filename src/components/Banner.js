@@ -1,4 +1,6 @@
 import "../styles/Banner.css";
+import API_KEY from "../request";
+import instance from "../axios";
 
 function Banner() {
   const truncate = (string, n) => {
@@ -25,7 +27,7 @@ function Banner() {
           )}
         </h1>
       </div>
-      {/* <div className="banner--fadebottom"></div> */}
+      <div className="banner--fadebottom"></div>
     </div>
   );
 }
