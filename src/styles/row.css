@@ -2,20 +2,27 @@
   position: relative;
   z-index: 1.5;
   margin-left: 2.5%;
-  margin-top: 8%;
+  margin-top: 0.1%;
   color: white;
+  padding: 10px;
+}
+.title {
+  position: relative;
 }
 .row_posters {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 20px;
+  padding: 0px;
+  margin-top: -8px;
 }
 .row_poster {
   max-height: 150px;
   object-fit: contain;
   margin-right: 10px;
   transition: transform 450ms;
+  border-radius: 5px;
+  position: relative;
 }
 .row_posters::-webkit-scrollbar {
   display: none;

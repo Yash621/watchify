@@ -33,7 +33,7 @@ function Banner() {
         alt="helu friend"
       />
       <div className="banner_contents">
-        <h1 className="banner_title">{movie?.title || movie?.original_name}</h1>
+        <h3 className="banner_title">{movie?.title || movie?.original_name}</h3>
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
