@@ -5,6 +5,7 @@ import Row from "../components/Row";
 import API_KEY from "../request";
 
 function HomeScreen() {
+  const isLargeRow = true;
   return (
     <div className="homeScreen">
       <Nav />
@@ -12,10 +13,11 @@ function HomeScreen() {
       <Row
         title="Trending Now"
         fetchURL={`/trending/all/week?api_key=${API_KEY}&language=en-US`}
+        isLargeRow={isLargeRow}
       />
       <Row
         title="Top Rated"
-        fetchURL={`/discover/top_rated?api_key=${API_KEY}&with_networks=213`}
+        fetchURL={`/movie/top_rated?api_key=${API_KEY}&with_networks=213`}
       />
       <Row
         title="Action Movies"
