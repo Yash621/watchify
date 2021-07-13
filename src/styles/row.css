@@ -1,0 +1,16 @@
+.row {
+  position: relative;
+  z-index: 1.5;
+  margin-left: 5%;
+  margin-top: 8%;
+  color: white;
+}
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row_poster {
+  max-height: 100px;
+}
