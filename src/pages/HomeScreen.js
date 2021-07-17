@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Row from "../components/Row";
 import API_KEY from "../request";
 
+
 function HomeScreen() {
   const isLargeRow = true;
   return (
