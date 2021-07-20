@@ -56,4 +56,5 @@
 ::placeholder {
   color: black;
   opacity: 1; /* Firefox */
+  font-size: 15px;
 }
