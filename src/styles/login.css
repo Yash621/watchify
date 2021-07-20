@@ -17,21 +17,40 @@
 .login_logo {
   position: fixed;
   left: 0;
-  width: 12.3%;
+  width: 160px;
   object-fit: contain;
   padding-left: 3.1%;
+  top: 4px;
 }
 .login_body {
   position: absolute;
   z-index: 2;
-  top: 30%;
+  top: 22%;
   color: white;
   padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 40%;
+  width: 40%;
+  left: 25%;
+  font-style: bold;
 }
 .login_body > h1 {
-  font-size: 25px;
+  font-size: 45px;
 }
-
+.login_body > h2 {
+  font-size: 25px;
+  position: relative;
+  top: -5px;
+}
+.login_body_child {
+  width: 750px;
+  position: absolute;
+  left: 0.1%;
+  font-size: 17px;
+  top: 67%;
+}
 .login_button {
   position: fixed;
   right: 4%;
@@ -42,4 +61,27 @@
   background-color: #e50914;
   cursor: pointer;
   border-radius: 5px;
+  outline: none;
+}
+.login_input {
+  height: 53px;
+  width: 500px;
+}
+.get_started {
+  background-color: #e50914;
+  height: 59px;
+  width: 230px;
+  cursor: pointer;
+  outline: none;
+}
+.get_started::hover {
+  color: opacity;
+}
+.get {
+  position: relative;
+  top: -3px;
+  color: white;
+}
+.input_box {
+  display: flex;
 }
