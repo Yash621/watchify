@@ -7,19 +7,16 @@ function App() {
   const user = null;
   return (
     <div className="app">
-      <HomeScreen />
       <Router>
-        <Route path="/login">
-          {user ? (
-            <Login />
-          ) : (
-            <Switch>
-              <Route path="/">
-                <HomeScreen />
-              </Route>
-            </Switch>
-          )}
-        </Route>
+        {!user ? (
+          <Login />
+        ) : (
+          <Switch>
+            <Route path="/">
+              <HomeScreen />
+            </Route>
+          </Switch>
+        )}
       </Router>
     </div>
   );
