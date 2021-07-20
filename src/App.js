@@ -7,6 +7,7 @@ function App() {
   const user = null;
   return (
     <div className="app">
+      <HomeScreen />
       <Router>
         <Route path="/login">
           {user ? (
