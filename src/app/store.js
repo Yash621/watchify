@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "../features/counterSlicer.js";
+import userReducer from "../features/userSlice.js";
 
 export default configureStore({
   reducer: {

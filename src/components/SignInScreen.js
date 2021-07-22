@@ -1,11 +1,14 @@
 import { useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
 import "/home/yash/Documents/webDevClones/watchify/src/styles/signupscreen.css";
 
 function SignInScreen() {
   const emailref = useRef(null);
   const passwordref = useRef(null);
-  const [user, setUser] = useState(auth.currentUser);
+  const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
   const register = (e) => {
     e.preventDefault();
@@ -22,20 +25,29 @@ function SignInScreen() {
       });
   };
   const signIn = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     auth
       .signInWithEmailAndPassword(
         emailref.current.value,
         passwordref.current.value
       )
       .then((authUser) => {
-        console.log(authUser);
+        const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+          if (userAuth) {
+            dispatch(
+              login({
+                uid: userAuth.uid,
+                email: userAuth.email,
+              })
+            );
+          } else {
+            dispatch(logout);
+          }
+        });
       })
       .catch((error) => {
         alert(error.message);
       });
-    setUser(auth.currentUser);
-    console.log(auth.currentUser);
   };
 
   return (
