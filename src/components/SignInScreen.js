@@ -22,7 +22,7 @@ function SignInScreen() {
       });
   };
   const signIn = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     auth
       .signInWithEmailAndPassword(
         emailref.current.value,
