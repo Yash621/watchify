@@ -6,6 +6,7 @@ import { auth } from "./firebase";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, login, selectUser } from "./features/userSlice";
+import ProfileScreen from "./pages/ProfileScreen.js";
 
 function App() {
   const user = useSelector(selectUser);
@@ -17,7 +18,10 @@ function App() {
           <Login />
         ) : (
           <Switch>
-            <Route path="/">
+            <Route path="/profile">
+              <ProfileScreen com={true} />
+            </Route>
+            <Route exact path="/">
               <HomeScreen />
             </Route>
           </Switch>
