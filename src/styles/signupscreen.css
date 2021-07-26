@@ -58,3 +58,12 @@
   opacity: 1; /* Firefox */
   font-size: 15px;
 }
+.sign-up :hover {
+  position: relative;
+  text-decoration: underline;
+  color: blue;
+}
+.sign-up {
+  cursor: pointer;
+  margin-top: -13px;
+}

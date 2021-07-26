@@ -9,6 +9,7 @@ function SignInScreen() {
   const passwordref = useRef(null);
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
+  const [signUp, setSignUp] = useState(false);
 
   const register = (e) => {
     e.preventDefault();
@@ -18,6 +19,7 @@ function SignInScreen() {
         passwordref.current.value
       )
       .then((authUser) => {
+        setSignUp(false);
         console.log(authUser);
       })
       .catch((error) => {
@@ -65,15 +67,23 @@ function SignInScreen() {
         type="password"
         className="input_password"
       />
-      <button className="SignIn" onClick={signIn}>
-        <h2>Sign In</h2>
-      </button>
+      {!signUp ? (
+        <button className="SignIn" onClick={signIn}>
+          <h2>Sign In</h2>
+        </button>
+      ) : (
+        <button className="SignIn" onClick={register}>
+          <h2>Sign up</h2>
+        </button>
+      )}
       <div className="checkbox">
         <div className="check_child">
           <input type="checkbox" />
           <p>Remember me</p>
         </div>
-        <p>Need help?</p>
+        <div className="sign-up">
+          <p onClick={() => setSignUp(true)}>Sign Up</p>
+        </div>
       </div>
     </div>
   );
