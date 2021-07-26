@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "/home/yash/Documents/webDevClones/watchify/src/styles/login.css";
+import "../styles/login.css";
 import SignInScreen from "../components/SignInScreen";
 
 function Login() {
