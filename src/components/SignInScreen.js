@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { login, logout, selectUser } from "../features/userSlice";
+import { useDispatch } from "react-redux";
+import { login, logout } from "../features/userSlice";
 import { auth } from "../firebase";
 import "../styles/signupscreen.css";
 
@@ -8,7 +8,6 @@ function SignInScreen() {
   const emailref = useRef(null);
   const passwordref = useRef(null);
   const dispatch = useDispatch();
-  const user = useSelector(selectUser);
   const [signUp, setSignUp] = useState(false);
 
   const register = (e) => {
@@ -33,8 +32,8 @@ function SignInScreen() {
         emailref.current.value,
         passwordref.current.value
       )
-      .then((authUser) => {
-        const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      .then(() => {
+        auth.onAuthStateChanged((userAuth) => {
           if (userAuth) {
             dispatch(
               login({
