@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
-import "/home/yash/Documents/webDevClones/watchify/src/styles/signupscreen.css";
+import "../styles/signupscreen.css";
 
 function SignInScreen() {
   const emailref = useRef(null);
